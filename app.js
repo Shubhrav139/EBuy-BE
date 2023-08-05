@@ -9,7 +9,7 @@ const couponRoutes = require("./routers/couponRoutes");
 const PORT = 8080;
 
 const app = express();
-const URL = "https://ebuy-fe.onrender.com/";
+const URL = "https://ebuy-fe.onrender.com";
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
