@@ -3,9 +3,12 @@ const mongoose = require("mongoose");
 //setting connection
 const dbconnect = async function () {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/Ecomm", {
-      useNewUrlParser: true,
-    });
+    await mongoose.connect(
+      "mongodb+srv://Shubhrav:Fc5hacgtQIqu7vgx@cluster1.azopekx.mongodb.net/EBuy",
+      {
+        useNewUrlParser: true,
+      }
+    );
 
     return Promise.resolve("DB connection established!");
   } catch (e) {
